@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio-Kelvin</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      src = "./tailwind.config.js";
+    </script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="overflow-x-hidden leading-8">
+    <nav
+      class="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50"
+    >
+      <img
+        src="images/khub.jpg"
+        alt="logo"
+        class="w-16 cursor-pointer mr-14 rounded-full"
+      />
+      <ul
+        class="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50 font-semibold"
+      >
+        <li><a href="index.html">Home</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="about.html">Experience</a></li>
+        <li><a href="projects.html">My work</a></li>
+        <li><a href="services.html">Services</a></li>
+      </ul>
+      <div class="flex items-center gap-4">
+        <a
+          href="services.html"
+          class="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 font-semibold"
+          >Contact <img src="arrow-40166_640.png" alt="" class="w-3"
+        /></a>
+
+        <button class="block md:hidden ml-3" onclick="openMenu()">
+          <img src="./images/menu-black.png" alt="" class="w-6" />
+        </button>
+      </div>
+      <!--------mobile menu------->
+      <ul
+        id="sideMenu"
+        class="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-500 font-semibold"
+      >
+        <div class="absolute right-6 top-6" onclick="closeMenu()">
+          <img
+            src="./images/close-black.png"
+            alt=""
+            class="w-5 cursor-pointer"
+          />
+        </div>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="education.html" onclick="closeMenu()">Education</a></li>
+        <li><a href="about.html" onclick="closeMenu()">Experience</a></li>
+        <li><a href="projects.html" onclick="closeMenu()">My work</a></li>
+        <li><a href="services.html" onclick="closeMenu()">Services</a></li>
+      </ul>
+    </nav>
+    <!-------------------header------------------>
+    <div
+      class="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4"
+    >
+      <img src="images/khub.jpg" alt="" class="rounded-full w-24" />
+      <h3 class="flex items-center gap-2 text-xl md:2xl: mb-3">
+        Hi! I'm collins
+        <img src="./images/hand-icon.png" alt="" class="w-6" />
+      </h3>
+      <h1 class="text-3xl sm:text-6xl lg:text-[45px]">
+        Data Analyst Based in Toronto, ON
+      </h1>
+      <p class="max-w-2xl mx-auto">
+        I am a data professional with over a year of experience in analysis,
+        entry, and database management, proficient in SQL, Python, and Excel.
+      </p>
+      <div class="flex flex-col sm:flex-row items-center gap-4 mt-4">
+        <a
+          href="services.html"
+          class="px-10 py-3 border rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] text-white flex items-center gap-2"
+          >Contact me
+          <img src="./images/right-arrow-white.png" alt="" class="w-4"
+        /></a>
+        <a
+          href="collins cv.pdf"
+          download
+          class="px-10 py-3 border rounded-full border-gray-5 flex items-center gap-2 bg-white"
+          >My resume <img src="./images/download-icon.png" alt="" class="w-4"
+        /></a>
+      </div>
+    </div>
+
+    <div id="about" class="w-full px-[12%] py-10 scroll-mt-20">
+      <h4 class="text-center mb-2 text-lg">Introduction</h4>
+      <h2 class="text-center text-5xl">About me</h2>
+      <div class="flex w-full flex-col lg:flex-row items-start gap-20 my-20">
+        <div class="max-w-max mx-auto relative lg:sticky lg:top-20">
+          <img
+            src="./images/khub.jpg"
+            alt=""
+            class="w-64 sm:w-80 rounded-3xl max-w-none"
+          />
+        </div>
+        <div class="flex-1">
+          <p class="mb-10 max-w-2xl">
+            Hi, I’m Collins Murichu a junior data analyst having certifications
+            in Data Analytics and Data Science. Currently advancing my expertise
+            through a Junior Data Analytics course at NPower Canada. Based in
+            Toronto but originally from Nairobi, Kenya, I bring diverse
+            experience from working as a data entry analyst. My specialties span
+            Business, Healthcare, Finance, and Sports analytics, with a keen
+            focus on delivering impactful data visualizations. Some of my key
+            projects include analyzing Formula 1 seasons from 2021-2023,
+            evaluating the efficiency of marketing campaigns, visualizing
+            mortality rates among shelter residents, and building machine
+            learning models for predictive analysis. With a passion for
+            continuous learning and problem-solving, I thrive in dynamic
+            environments where data drives decision-making and success. I’m
+            always eager to connect with professionals from all fields to expand
+            my knowledge and impact.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!---------------------------footer---------->
+    <div class="mt-5">
+      <div class="text-center">
+        <img
+          src="images/khub.jpg"
+          alt=""
+          class="w-36 mx-auto mb-2 rounded-full"
+        />
+        <div class="w-max flex items-center gap-2 mx-auto">
+          <a
+            href="mailto:kevinomwangi11@gmail.com"
+            class="email-link flex items-center gap-2"
+          >
+            <img src="./images/mail_icon.png" alt="Email Icon" class="w-6" />
+            kevinomwangi11@gmail.com
+          </a>
+        </div>
+
+        <div
+          class="text-center sm:flex items-center justify-between border-t border-gray-400 mx-[10%] mt-12 py-6"
+        >
+          <ul
+            class="flex flex-wrap items-center justify-center gap-10 mt-4 sm:mt-0"
+          >
+            <li class="flex flex-col items-center">
+              <a
+                href="https://github.com/kulture56"
+                class="icon-link flex flex-col items-center"
+                data-tooltip="GitHub"
+                aria-label="GitHub"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-github mb-2"
+                >
+                  <path
+                    d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
+                  ></path>
+                  <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                </svg>
+                <span class="text-xs">GitHub</span>
+              </a>
+            </li>
+            <li class="flex flex-col items-center">
+              <a
+                href="https://www.linkedin.com/in/collins-murichu-5b4612226/"
+                class="icon-link flex flex-col items-center"
+                data-tooltip="LinkedIn"
+                aria-label="LinkedIn"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-linkedin mb-2"
+                >
+                  <path
+                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                  ></path>
+                  <rect width="4" height="12" x="2" y="9"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+                <span class="text-xs">LinkedIn</span>
+              </a>
+            </li>
+            <li class="flex flex-col items-center">
+              <a
+                href="https://public.tableau.com/app/profile/collins.wanjira/vizzes"
+                class="icon-link flex flex-col items-center"
+                data-tooltip="Tableau"
+                aria-label="Tableau"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="mb-2"
+                >
+                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="3" y1="9" x2="21" y2="9"></line>
+                  <line x1="3" y1="15" x2="21" y2="15"></line>
+                  <line x1="9" y1="3" x2="9" y2="21"></line>
+                  <line x1="15" y1="3" x2="15" y2="21"></line>
+                </svg>
+                <span class="text-xs">Tableau</span>
+              </a>
+            </li>
+            <li class="flex flex-col items-center">
+              <a
+                href="https://medium.com/@mylocollins56"
+                class="icon-link flex flex-col items-center"
+                aria-label="Medium"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="mb-2"
+                >
+                  <path
+                    d="M2.846 6.887c.03-.295-.083-.586-.303-.784l-2.24-2.7v-.403h6.958l5.378 11.795 4.728-11.795h6.633v.403l-1.916 1.837c-.165.126-.247.333-.213.538v13.498c-.034.204.048.411.213.537l1.871 1.837v.403h-9.412v-.403l1.939-1.882c.19-.19.19-.246.19-.537v-10.91l-5.389 13.688h-.728l-6.275-13.688v9.174c-.052.385.076.774.347 1.052l2.521 3.058v.404h-7.148v-.404l2.521-3.058c.27-.279.39-.67.325-1.052v-10.608z"
+                  />
+                </svg>
+                <span class="text-xs">Medium</span>
+              </a>
+            </li>
+          </ul>
+          <p>
+            &copy; <span id="current-year"></span> Kulture Hub. All rights
+            reserved.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-------------script starts here------------>
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio-Kelvin</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      src = "./tailwind.config.js";
+    </script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="overflow-x-hidden leading-8">
+    <nav
+      class="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50"
+    >
+      <img
+        src="images/khub.jpg"
+        alt="logo"
+        class="w-16 cursor-pointer mr-14 rounded-full"
+      />
+      <ul
+        class="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50 font-semibold"
+      >
+        <li><a href="index.html">Home</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="about.html">Experience</a></li>
+        <li><a href="projects.html">My work</a></li>
+        <li><a href="services.html">Services</a></li>
+      </ul>
+      <div class="flex items-center gap-4">
+        <a
+          href="services.html"
+          class="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 font-semibold"
+          >Contact <img src="arrow-40166_640.png" alt="" class="w-3"
+        /></a>
+
+        <button class="block md:hidden ml-3" onclick="openMenu()">
+          <img src="./images/menu-black.png" alt="" class="w-6" />
+        </button>
+      </div>
+      <!--------mobile menu------->
+      <ul
+        id="sideMenu"
+        class="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-500 font-semibold"
+      >
+        <div class="absolute right-6 top-6" onclick="closeMenu()">
+          <img
+            src="./images/close-black.png"
+            alt=""
+            class="w-5 cursor-pointer"
+          />
+        </div>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="education.html" onclick="closeMenu()">Education</a></li>
+        <li><a href="about.html" onclick="closeMenu()">Experience</a></li>
+        <li><a href="projects.html" onclick="closeMenu()">My work</a></li>
+        <li><a href="services.html" onclick="closeMenu()">Services</a></li>
+      </ul>
+    </nav>
+    <!--------------------education---------------->
+    <main class="pt-20 px-5 lg:px-8 xl:px-[8%]">
+      <section id="education" class="py-16">
+        <h1 class="text-4xl font-bold text-center mb-12">
+          My Education Journey
+        </h1>
+        <div class="space-y-12">
+          <div
+            class="bg-white shadow-md rounded-lg p-6 w-full border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]"
+          >
+            <h2 class="text-2xl font-semibold mb-2">
+              Certificate, AI 900 Microsoft Azure
+            </h2>
+            <h3 class="text-xl text-gray-600 mb-2">Microsoft Learn</h3>
+            <p class="text-gray-500 mb-4">Oct 2024</p>
+            <p class="mb-4">
+              Completing the AI-900 certification provided a strong foundation
+              in artificial intelligence concepts and how they are implemented
+              using Microsoft Azure's AI services. Through this learning
+              journey, I gained valuable insights into both theoretical
+              knowledge and practical applications.
+            </p>
+            <h4 class="font-semibold mb-2">Skills:</h4>
+            <p class="text-gray-600">
+              Microsoft Azure Machine Learning · Artificial Intelligence (AI) ·
+              Azure AI Services · Computer Vision
+            </p>
+          </div>
+
+          <div
+            class="bg-white shadow-md rounded-lg p-6 w-full border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]"
+          >
+            <h2 class="text-2xl font-semibold mb-2">
+              Certificate, Data Analyst Program
+            </h2>
+            <h3 class="text-xl text-gray-600 mb-2">NPower Canada</h3>
+            <p class="text-gray-500 mb-4">Sep 2024</p>
+            <p class="mb-4">
+              Intensive training program designed to equip participants with
+              essential data analytics skills needed for today's job market.
+              Delivered entirely online, the program focuses on core
+              competencies in data cleaning, analysis, visualization, and
+              reporting using tools such as Excel, SQL, and Power BI.
+            </p>
+            <h4 class="font-semibold mb-2">Skills:</h4>
+            <p class="text-gray-600">
+              Pivot Tables · Statistical Analysis Tools · Data Management ·
+              Analytical Skills · Databases · SQL · Teamwork · VLOOKUP ·
+              Extract, Transform, Load (ETL) · Team Leadership · Time Management
+              · Python (Programming Language) · Critical Thinking
+            </p>
+          </div>
+
+          <div
+            class="bg-white shadow-md rounded-lg p-6 w-full border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]"
+          >
+            <h2 class="text-2xl font-semibold mb-2">
+              Certificate, SQL Essentials
+            </h2>
+            <h3 class="text-xl text-gray-600 mb-2">Lighthouse Labs</h3>
+            <p class="text-gray-500 mb-4">Aug 2024</p>
+            <p class="mb-4">
+              During the SQL Essentials Bootcamp at LightHouse Labs, I gained a
+              deep understanding of the foundational and advanced concepts of
+              SQL. This immersive course provided hands-on experience with
+              real-world data. This course helped solidify my SQL skills, giving
+              me the ability to analyze data, join tables effectively, and
+              optimize databases, which I now apply in my analytics and data
+              science projects.
+            </p>
+            <p class="italic mb-4">
+              Activities and societies: Business Analysis Project
+            </p>
+            <h4 class="font-semibold mb-2">Skills:</h4>
+            <p class="text-gray-600">
+              Data Management · Analytical Skills · SQL · Problem Solving ·
+              Critical Thinking
+            </p>
+          </div>
+
+          <div
+            class="bg-white shadow-md rounded-lg p-6 w-full border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]"
+          >
+            <h2 class="text-2xl font-semibold mb-2">
+              Certificate, Data Science/ Machine Learning
+            </h2>
+            <h3 class="text-xl text-gray-600 mb-2">BrainStation</h3>
+            <p class="text-gray-500 mb-4">Jul 2024 - Sep 2024</p>
+            <p class="mb-4">
+              During my time at BrainStation, I had the opportunity to dive
+              deeply into the core concepts of Data Science and Machine
+              Learning, refining my technical skills and applying them to
+              real-world scenarios. The program offered a hands-on,
+              project-based curriculum, which helped me enhance my expertise in
+              key areas.
+            </p>
+            <p class="italic mb-4">
+              Activities and societies: Networking IT events
+            </p>
+            <h4 class="font-semibold mb-2">Skills:</h4>
+            <p class="text-gray-600">
+              Machine Learning · Analytical Skills · Teamwork · Time Management
+              · Deep Learning · Python (Programming Language) · Critical
+              Thinking · Data Science · Data Cleaning
+            </p>
+          </div>
+
+          <div
+            class="bg-white shadow-md rounded-lg p-6 w-full border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]"
+          >
+            <h2 class="text-2xl font-semibold mb-2">
+              IBM Data Analyst Professional Certificate
+            </h2>
+            <h3 class="text-xl text-gray-600 mb-2">IBM</h3>
+            <p class="text-gray-500 mb-4">May 2024 - Nov 2024</p>
+            <p class="mb-4">
+              As part of my continuous learning journey, I am currently enrolled
+              in the IBM Data Analyst Professional Certificate program, which
+              has enhanced my analytical skillset through hands-on, real-world
+              data projects. The course covers a wide range of essential data
+              analysis topics. This program has strengthened my foundation in
+              data analytics, equipping me with both the technical tools and
+              analytical mindset to succeed in various industries like business,
+              finance, and sports analytics.
+            </p>
+            <h4 class="font-semibold mb-2">Skills:</h4>
+            <p class="text-gray-600">
+              Tableau · Pivot Tables · Data Management · Analytical Skills ·
+              Microsoft Excel · VLOOKUP · Extract, Transform, Load (ETL) · Data
+              Visualization · Critical Thinking · Data Analysis · SQL · Problem
+              Solving
+            </p>
+          </div>
+          <div
+            class="bg-white shadow-md rounded-lg p-6 w-full border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]"
+          >
+            <h2 class="text-2xl font-semibold mb-2">
+              Google Data Analytics Professional Certificate
+            </h2>
+            <h3 class="text-xl text-gray-600 mb-2">Coursera</h3>
+            <p class="text-gray-500 mb-4">May 2024</p>
+            <p class="mb-4">
+              Through the Google Data Analytics Professional Certificate
+              program, I gained a comprehensive understanding of the data
+              analysis process, from data collection to final reporting. The
+              program provided hands-on learning with real-world datasets and
+              tools, significantly enhancing my analytical skills. This
+              certificate deepened my ability to apply critical thinking,
+              problem-solving, and data visualization techniques to real-world
+              scenarios, which I now use in my professional data projects.
+            </p>
+            <h4 class="font-semibold mb-2">Skills:</h4>
+            <p class="text-gray-600">
+              Tableau · Data Management · Analytical Skills · Databases · Data
+              Cleaning · Data Warehousing · Creative Problem Solving · SQL ·
+              VLOOKUP · Extract, Transform, Load (ETL) · Problem Solving · Data
+              Visualization · Data Mining · Data Analysis
+            </p>
+          </div>
+
+          <div
+            class="bg-white shadow-md rounded-lg p-6 w-full border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]"
+          >
+            <h2 class="text-2xl font-semibold mb-2">
+              Certificate, Basic Data Analysis
+            </h2>
+            <h3 class="text-xl text-gray-600 mb-2">Futuretek Academy</h3>
+            <p class="text-gray-500 mb-4">Mar 2024 - May 2024</p>
+            <p class="mb-4">
+              A 2-month intensive Data Analytics course, marking my first formal
+              education experience in Canada. This course was a pivotal step in
+              my career, providing me with a solid foundation in data analysis,
+              visualization, and database management. Throughout the course, I
+              gained hands-on experience with key tools and techniques,
+              including Excel, SQL, and Tableau. I learned how to clean,
+              analyze, and visualize data to extract meaningful insights and
+              support data-driven decision-making. This experience not only
+              enhanced my technical skills but also introduced me to the
+              Canadian educational environment, where I adapted quickly and
+              excelled in my studies. I was praised as the best student in the
+              class, counting it as an achievement being my first Canadian
+              class.
+            </p>
+            <h4 class="font-semibold mb-2">Skills:</h4>
+            <p class="text-gray-600">
+              Tableau · Data Management · Databases · SQL · Communication ·
+              Microsoft Outlook · VLOOKUP · Attention to Detail · Problem
+              Solving · Python (Programming Language) · Online Data Entry
+            </p>
+          </div>
+
+          <div
+            class="bg-white shadow-md rounded-lg p-6 w-full border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]"
+          >
+            <h2 class="text-2xl font-semibold mb-2">
+              Certificate, Data Visualisation
+            </h2>
+            <h3 class="text-xl text-gray-600 mb-2">Moringa School</h3>
+            <p class="text-gray-500 mb-4">Sep 2023</p>
+            <p class="mb-4">
+              Gained beginner experience in data visualization using programming
+              languages like Matplotlib, Seaborn, Plotly, ggplot2. I also got
+              hands-on class project experience on pivot tables, PowerPoint and
+              Tableau.
+            </p>
+            <h4 class="font-semibold mb-2">Skills:</h4>
+            <p class="text-gray-600">
+              Tableau · Microsoft Office · Communication · Presentations ·
+              Attention to Detail · Time Management · Python (Programming
+              Language)
+            </p>
+          </div>
+
+          <div
+            class="bg-white shadow-md rounded-lg p-6 w-full border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]"
+          >
+            <h2 class="text-2xl font-semibold mb-2">
+              Certification in Data Analytics
+            </h2>
+            <h3 class="text-xl text-gray-600 mb-2">
+              The Nyeri National Polytechnic
+            </h3>
+            <p class="text-gray-500 mb-4">Jun 2021 - Dec 2021</p>
+            <p class="mb-4">
+              During my time at The Nyeri National Polytechnic, I embarked on an
+              enriching journey through the Data Analytics course. This
+              experience not only broadened my understanding of data-driven
+              decision-making but also equipped me with essential skills
+              applicable across various industries. The curriculum covered a
+              wide range of topics, including data manipulation, statistical
+              analysis, and data visualization. Through a blend of theoretical
+              knowledge and practical application, I gained insights into how to
+              analyze data effectively to derive actionable insights.
+            </p>
+            <p class="italic mb-4">
+              Activities and societies: Class Projects and School Events
+            </p>
+            <h4 class="font-semibold mb-2">Skills:</h4>
+            <p class="text-gray-600">
+              Tableau · Pivot Tables · Data Management · Analytical Skills ·
+              Databases · Microsoft Office · Communication · Microsoft Outlook ·
+              Teamwork · Typing · VLOOKUP · Extract, Transform, Load (ETL) ·
+              Team Leadership · Attention to Detail · Time Management · Python
+              (Programming Language)
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!---------------------------footer---------->
+    <div class="mt-5">
+      <div class="text-center">
+        <img
+          src="images/khub.jpg"
+          alt=""
+          class="w-36 mx-auto mb-2 rounded-full"
+        />
+        <div class="w-max flex items-center gap-2 mx-auto">
+          <a
+            href="mailto:kevinomwangi11@gmail.com"
+            class="email-link flex items-center gap-2"
+          >
+            <img src="./images/mail_icon.png" alt="Email Icon" class="w-6" />
+            kevinomwangi11@gmail.com
+          </a>
+        </div>
+
+        <div
+          class="text-center sm:flex items-center justify-between border-t border-gray-400 mx-[10%] mt-12 py-6"
+        >
+          <ul
+            class="flex flex-wrap items-center justify-center gap-10 mt-4 sm:mt-0"
+          >
+            <li class="flex flex-col items-center">
+              <a
+                href="https://github.com/kulture56"
+                class="icon-link flex flex-col items-center"
+                data-tooltip="GitHub"
+                aria-label="GitHub"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-github mb-2"
+                >
+                  <path
+                    d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
+                  ></path>
+                  <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                </svg>
+                <span class="text-xs">GitHub</span>
+              </a>
+            </li>
+            <li class="flex flex-col items-center">
+              <a
+                href="https://www.linkedin.com/in/collins-murichu-5b4612226/"
+                class="icon-link flex flex-col items-center"
+                data-tooltip="LinkedIn"
+                aria-label="LinkedIn"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-linkedin mb-2"
+                >
+                  <path
+                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                  ></path>
+                  <rect width="4" height="12" x="2" y="9"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+                <span class="text-xs">LinkedIn</span>
+              </a>
+            </li>
+            <li class="flex flex-col items-center">
+              <a
+                href="https://public.tableau.com/app/profile/collins.wanjira/vizzes"
+                class="icon-link flex flex-col items-center"
+                data-tooltip="Tableau"
+                aria-label="Tableau"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="mb-2"
+                >
+                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="3" y1="9" x2="21" y2="9"></line>
+                  <line x1="3" y1="15" x2="21" y2="15"></line>
+                  <line x1="9" y1="3" x2="9" y2="21"></line>
+                  <line x1="15" y1="3" x2="15" y2="21"></line>
+                </svg>
+                <span class="text-xs">Tableau</span>
+              </a>
+            </li>
+            <li class="flex flex-col items-center">
+              <a
+                href="https://medium.com/@mylocollins56"
+                class="icon-link flex flex-col items-center"
+                aria-label="Medium"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="mb-2"
+                >
+                  <path
+                    d="M2.846 6.887c.03-.295-.083-.586-.303-.784l-2.24-2.7v-.403h6.958l5.378 11.795 4.728-11.795h6.633v.403l-1.916 1.837c-.165.126-.247.333-.213.538v13.498c-.034.204.048.411.213.537l1.871 1.837v.403h-9.412v-.403l1.939-1.882c.19-.19.19-.246.19-.537v-10.91l-5.389 13.688h-.728l-6.275-13.688v9.174c-.052.385.076.774.347 1.052l2.521 3.058v.404h-7.148v-.404l2.521-3.058c.27-.279.39-.67.325-1.052v-10.608z"
+                  />
+                </svg>
+                <span class="text-xs">Medium</span>
+              </a>
+            </li>
+          </ul>
+          <p>
+            &copy; <span id="current-year"></span> Kulture Hub. All rights
+            reserved.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-------------script starts here------------>
+    <script src="./script.js"></script>
+  </body>
+</html>

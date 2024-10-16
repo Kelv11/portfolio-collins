@@ -1,0 +1,65 @@
+body {
+  background: linear-gradient(45deg, #ff9a9e, #fad0c4); /* Pink shades */
+  background: linear-gradient(
+    135deg,
+    #667eea,
+    #764ba2
+  ); /* Deep blue and purple */
+}
+.icon-link {
+  position: relative;
+  display: inline-block;
+}
+.icon-tooltip {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 14px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s;
+  pointer-events: none;
+}
+.icon-link:hover .icon-tooltip {
+  opacity: 1;
+  visibility: visible;
+}
+
+.email-link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+}
+
+.email-link:hover {
+  text-decoration: underline;
+}
+
+.email-link img {
+  display: inline-block;
+  margin-right: 8px; /* Optional: adjust the spacing */
+}
+.service-card {
+  transition: all 0.3s ease;
+}
+.service-card.expanded {
+  grid-row: span 2;
+}
+.expanded-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+.expanded-content.show {
+  max-height: 1000px; /* Adjust this value based on your content */
+}
+.hidden {
+  display: none;
+}

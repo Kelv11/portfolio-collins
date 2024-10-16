@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio-Kelvin</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      src = "./tailwind.config.js";
+    </script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="overflow-x-hidden leading-8">
+    <nav
+      class="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50"
+    >
+      <img
+        src="images/khub.jpg"
+        alt="logo"
+        class="w-16 cursor-pointer mr-14 rounded-full"
+      />
+      <ul
+        class="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50 font-semibold"
+      >
+        <li><a href="index.html">Home</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="about.html">Experience</a></li>
+        <li><a href="projects.html">My work</a></li>
+        <li><a href="services.html">Services</a></li>
+      </ul>
+      <div class="flex items-center gap-4">
+        <a
+          href="services.html"
+          class="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 font-semibold"
+          >Contact <img src="arrow-40166_640.png" alt="" class="w-3"
+        /></a>
+
+        <button class="block md:hidden ml-3" onclick="openMenu()">
+          <img src="./images/menu-black.png" alt="" class="w-6" />
+        </button>
+      </div>
+      <!--------mobile menu------->
+      <ul
+        id="sideMenu"
+        class="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-500 font-semibold"
+      >
+        <div class="absolute right-6 top-6" onclick="closeMenu()">
+          <img
+            src="./images/close-black.png"
+            alt=""
+            class="w-5 cursor-pointer"
+          />
+        </div>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="education.html" onclick="closeMenu()">Education</a></li>
+        <li><a href="about.html" onclick="closeMenu()">Experience</a></li>
+        <li><a href="projects.html" onclick="closeMenu()">My work</a></li>
+        <li><a href="services.html" onclick="closeMenu()">Services</a></li>
+      </ul>
+    </nav>
+    <!-------------------------Experiences------------------------->
+    <div id="about" class="w-full py-10 scroll-mt-20">
+      <div class="container mx-auto px-4">
+        <h4 class="text-center mb-2 text-lg text-gray-600">Introduction</h4>
+        <h2 class="text-center text-4xl font-bold mb-12">My experiences</h2>
+        <div class="space-y-12 my-20">
+          <!-- Experience 1 -->
+          <div class="border-b pb-8">
+            <h3 class="text-2xl font-semibold mb-2">Junior Data Analyst</h3>
+            <p class="text-black-600 mb-1">
+              Wymore IT Solutions · Permanent Full-time
+            </p>
+            <p class="text-sm text-black-500 mb-4">
+              Jan 2022 - Jun 2023 · 1 yr 6 months
+            </p>
+            <p class="text-sm text-black-500 mb-4">Nairobi, Kenya</p>
+            <p class="mb-6">
+              My role involved orchestrating the entire data lifecycle—from
+              collection and cleaning to analysis and storage—using tools like
+              Excel, PostgreSQL, and PowerPoint. During my tenure, I authored
+              SQL codes, managed databases, and collaborated on business
+              analysis projects to identify problems and drive data-driven
+              solutions. My work consistently supported management
+              decision-making through detailed analysis reports.
+            </p>
+            <p class="mb-6">
+              With a strong foundation in data manipulation and a passion for
+              problem-solving, I am committed to continuous learning and
+              currently advancing my skills in Data Science. I thrive in dynamic
+              environments where I can leverage data to uncover insights and
+              contribute to meaningful projects.
+            </p>
+            <div>
+              <h4 class="font-semibold mb-2">Skills:</h4>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="px-2 py-1 bg-gray-200 text-gray-700 rounded-full text-sm"
+                  >Team Building</span
+                >
+                <span
+                  class="px-2 py-1 bg-gray-200 text-gray-700 rounded-full text-sm"
+                  >Negotiation</span
+                >
+                <span
+                  class="px-2 py-1 bg-gray-200 text-gray-700 rounded-full text-sm"
+                  >Time Management</span
+                >
+                <span
+                  class="px-2 py-1 bg-gray-200 text-gray-700 rounded-full text-sm"
+                  >Microsoft Outlook</span
+                >
+                <span
+                  class="px-2 py-1 bg-gray-200 text-gray-700 rounded-full text-sm"
+                  >Critical Thinking</span
+                >
+                <span
+                  class="px-2 py-1 bg-gray-200 text-gray-700 rounded-full text-sm"
+                  >Presentations</span
+                >
+                <span
+                  class="px-2 py-1 bg-gray-200 text-gray-700 rounded-full text-sm"
+                  >Team Leadership</span
+                >
+                <span
+                  class="px-2 py-1 bg-gray-200 text-gray-700 rounded-full text-sm"
+                  >Statistical Analysis Tools</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience 2 -->
+          <h2 class="text-center text-4xl font-bold mb-12">
+            Volunteering service
+          </h2>
+          <div>
+            <h3 class="text-2xl font-semibold mb-2">Sales Attendant</h3>
+            <p class="text-black-600 mb-1">
+              Habitat for Humanity International
+            </p>
+            <p class="text-sm text-black-500 mb-4">
+              Feb 2024 - Jul 2024 · 6 months
+            </p>
+            <p class="mb-4">Disaster and Humanitarian Relief</p>
+            <ul class="list-disc pl-5 space-y-2 mb-6">
+              <li>
+                <strong>Data Management:</strong> Regularly updated Excel
+                sheets, tracking inventory, sales, and pricing data. This
+                strengthened my ability to handle large datasets and maintain
+                data accuracy.
+              </li>
+              <li>
+                <strong>Pricing Strategy:</strong> Involved in pricing items
+                according to the store's system, applying both competitive
+                analysis and understanding which enhanced my analytical
+                thinking.
+              </li>
+              <li>
+                <strong>Customer Experience:</strong> Delivered quality customer
+                care, leveraging data insights to ensure an optimized shopping
+                experience, thus enhancing my problem-solving and communication
+                skills.
+              </li>
+              <li>
+                <strong>Attention to Detail:</strong> Ensured all transactions
+                and records were accurately logged, further developing my
+                attention to detail, a key skill in data analysis.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!---------------------------footer---------->
+    <div class="mt-5">
+      <div class="text-center">
+        <img
+          src="images/khub.jpg"
+          alt=""
+          class="w-36 mx-auto mb-2 rounded-full"
+        />
+        <div class="w-max flex items-center gap-2 mx-auto">
+          <a
+            href="mailto:kevinomwangi11@gmail.com"
+            class="email-link flex items-center gap-2"
+          >
+            <img src="./images/mail_icon.png" alt="Email Icon" class="w-6" />
+            kevinomwangi11@gmail.com
+          </a>
+        </div>
+
+        <div
+          class="text-center sm:flex items-center justify-between border-t border-gray-400 mx-[10%] mt-12 py-6"
+        >
+          <ul
+            class="flex flex-wrap items-center justify-center gap-10 mt-4 sm:mt-0"
+          >
+            <li class="flex flex-col items-center">
+              <a
+                href="https://github.com/kulture56"
+                class="icon-link flex flex-col items-center"
+                data-tooltip="GitHub"
+                aria-label="GitHub"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-github mb-2"
+                >
+                  <path
+                    d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
+                  ></path>
+                  <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                </svg>
+                <span class="text-xs">GitHub</span>
+              </a>
+            </li>
+            <li class="flex flex-col items-center">
+              <a
+                href="https://www.linkedin.com/in/collins-murichu-5b4612226/"
+                class="icon-link flex flex-col items-center"
+                data-tooltip="LinkedIn"
+                aria-label="LinkedIn"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-linkedin mb-2"
+                >
+                  <path
+                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                  ></path>
+                  <rect width="4" height="12" x="2" y="9"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+                <span class="text-xs">LinkedIn</span>
+              </a>
+            </li>
+            <li class="flex flex-col items-center">
+              <a
+                href="https://public.tableau.com/app/profile/collins.wanjira/vizzes"
+                class="icon-link flex flex-col items-center"
+                data-tooltip="Tableau"
+                aria-label="Tableau"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="mb-2"
+                >
+                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="3" y1="9" x2="21" y2="9"></line>
+                  <line x1="3" y1="15" x2="21" y2="15"></line>
+                  <line x1="9" y1="3" x2="9" y2="21"></line>
+                  <line x1="15" y1="3" x2="15" y2="21"></line>
+                </svg>
+                <span class="text-xs">Tableau</span>
+              </a>
+            </li>
+            <li class="flex flex-col items-center">
+              <a
+                href="https://medium.com/@mylocollins56"
+                class="icon-link flex flex-col items-center"
+                aria-label="Medium"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="mb-2"
+                >
+                  <path
+                    d="M2.846 6.887c.03-.295-.083-.586-.303-.784l-2.24-2.7v-.403h6.958l5.378 11.795 4.728-11.795h6.633v.403l-1.916 1.837c-.165.126-.247.333-.213.538v13.498c-.034.204.048.411.213.537l1.871 1.837v.403h-9.412v-.403l1.939-1.882c.19-.19.19-.246.19-.537v-10.91l-5.389 13.688h-.728l-6.275-13.688v9.174c-.052.385.076.774.347 1.052l2.521 3.058v.404h-7.148v-.404l2.521-3.058c.27-.279.39-.67.325-1.052v-10.608z"
+                  />
+                </svg>
+                <span class="text-xs">Medium</span>
+              </a>
+            </li>
+          </ul>
+          <p>
+            &copy; <span id="current-year"></span> Kulture Hub. All rights
+            reserved.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-------------script starts here------------>
+    <script src="./script.js"></script>
+  </body>
+</html>
