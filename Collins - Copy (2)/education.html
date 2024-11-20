@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio-Kelvin</title>
+    <title>Portfolio-collins</title>
+    <link rel="icon" type="image/jpeg" href="images/khub.jpg" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       src = "./tailwind.config.js";
@@ -24,14 +25,14 @@
       >
         <li><a href="index.html">Home</a></li>
         <li><a href="education.html">Education</a></li>
-        <li><a href="about.html">Experience</a></li>
+        <li><a href="experience.html">Experience</a></li>
         <li><a href="projects.html">My work</a></li>
         <li><a href="services.html">Services</a></li>
       </ul>
       <div class="flex items-center gap-4">
         <a
           href="services.html"
-          class="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 font-semibold"
+          class="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 font-semibold hover:bg-[#fcf4ff] duration-500"
           >Contact <img src="arrow-40166_640.png" alt="" class="w-3"
         /></a>
 
@@ -42,7 +43,7 @@
       <!--------mobile menu------->
       <ul
         id="sideMenu"
-        class="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-500 font-semibold"
+        class="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-slate-800 bg-opacity-90 backdrop-blur-sm transition duration-500 font-semibold text-white"
       >
         <div class="absolute right-6 top-6" onclick="closeMenu()">
           <img
@@ -53,7 +54,7 @@
         </div>
         <li><a href="index.html">Home</a></li>
         <li><a href="education.html" onclick="closeMenu()">Education</a></li>
-        <li><a href="about.html" onclick="closeMenu()">Experience</a></li>
+        <li><a href="experience.html" onclick="closeMenu()">Experience</a></li>
         <li><a href="projects.html" onclick="closeMenu()">My work</a></li>
         <li><a href="services.html" onclick="closeMenu()">Services</a></li>
       </ul>
@@ -68,17 +69,16 @@
           <div
             class="bg-white shadow-md rounded-lg p-6 w-full border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]"
           >
-            <h2 class="text-2xl font-semibold mb-2">
-              Certificate, AI 900 Microsoft Azure
-            </h2>
+            <h2 class="text-2xl font-semibold mb-2">AI-900 Microsoft Azure</h2>
             <h3 class="text-xl text-gray-600 mb-2">Microsoft Learn</h3>
-            <p class="text-gray-500 mb-4">Oct 2024</p>
+            <p class="text-gray-500 mb-4">Sep - Oct 2024</p>
             <p class="mb-4">
-              Completing the AI-900 certification provided a strong foundation
-              in artificial intelligence concepts and how they are implemented
-              using Microsoft Azure's AI services. Through this learning
-              journey, I gained valuable insights into both theoretical
-              knowledge and practical applications.
+              Completed the AI-900 Microsoft Azure Fundamentals certification
+              through Microsoft Learn. This certification provided a solid
+              foundation in AI concepts and Microsoft Azure's AI services,
+              including machine learning, computer vision, and natural language
+              processing, preparing me to effectively utilize AI solutions
+              within the Azure platform.
             </p>
             <h4 class="font-semibold mb-2">Skills:</h4>
             <p class="text-gray-600">
@@ -91,16 +91,20 @@
             class="bg-white shadow-md rounded-lg p-6 w-full border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]"
           >
             <h2 class="text-2xl font-semibold mb-2">
-              Certificate, Data Analyst Program
+              Junior Data Analyst Program
             </h2>
             <h3 class="text-xl text-gray-600 mb-2">NPower Canada</h3>
-            <p class="text-gray-500 mb-4">Sep 2024</p>
+            <p class="text-gray-500 mb-4">September - December 2024</p>
             <p class="mb-4">
-              Intensive training program designed to equip participants with
-              essential data analytics skills needed for today's job market.
-              Delivered entirely online, the program focuses on core
-              competencies in data cleaning, analysis, visualization, and
-              reporting using tools such as Excel, SQL, and Power BI.
+              During this program, I've developed proficiency in essential data
+              analysis tools, including Excel and SQL Fundamentals for Data
+              Science. I've gained hands-on experience in data interpretation,
+              visualization, and leveraging Python for applied data science and
+              AI, focusing on loops, conditions, functions, and popular
+              libraries. Additionally, I've explored Microsoft Azure AI
+              Insights, covering AI workloads, machine learning fundamentals,
+              and advanced features like Computer Vision and Natural Language
+              Processing(NLP).
             </p>
             <h4 class="font-semibold mb-2">Skills:</h4>
             <p class="text-gray-600">
@@ -114,9 +118,7 @@
           <div
             class="bg-white shadow-md rounded-lg p-6 w-full border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]"
           >
-            <h2 class="text-2xl font-semibold mb-2">
-              Certificate, SQL Essentials
-            </h2>
+            <h2 class="text-2xl font-semibold mb-2">SQL Essentials</h2>
             <h3 class="text-xl text-gray-600 mb-2">Lighthouse Labs</h3>
             <p class="text-gray-500 mb-4">Aug 2024</p>
             <p class="mb-4">
@@ -142,26 +144,33 @@
             class="bg-white shadow-md rounded-lg p-6 w-full border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]"
           >
             <h2 class="text-2xl font-semibold mb-2">
-              Certificate, Data Science/ Machine Learning
+              Data Science and Machine Learning
             </h2>
             <h3 class="text-xl text-gray-600 mb-2">BrainStation</h3>
-            <p class="text-gray-500 mb-4">Jul 2024 - Sep 2024</p>
+            <p class="text-gray-500 mb-4">July - Sep 2024</p>
             <p class="mb-4">
-              During my time at BrainStation, I had the opportunity to dive
-              deeply into the core concepts of Data Science and Machine
-              Learning, refining my technical skills and applying them to
-              real-world scenarios. The program offered a hands-on,
-              project-based curriculum, which helped me enhance my expertise in
-              key areas.
+              During my time at BrainStation, I deepened my understanding of
+              core Data Science and Machine Learning concepts through a
+              hands-on, project-based curriculum. I had the opportunity to apply
+              my skills to real-world problems, including a project focused on
+              predicting faulty water pumps to improve access to clean water
+              across Tanzania. This experience strengthened my expertise in
+              Machine Learning, data analysis, and problem-solving.
+            </p>
+            <p class="mb-4">
+              Project: Predicting Faulty Water Pumps in Tanzania The objective
+              of this project was to predict which water pumps were faulty,
+              aiming to enhance water access across Tanzania by ensuring
+              efficient repairs and maintenance.
             </p>
             <p class="italic mb-4">
-              Activities and societies: Networking IT events
+              Activities: Networking and participating in IT events
             </p>
             <h4 class="font-semibold mb-2">Skills:</h4>
             <p class="text-gray-600">
-              Machine Learning · Analytical Skills · Teamwork · Time Management
-              · Deep Learning · Python (Programming Language) · Critical
-              Thinking · Data Science · Data Cleaning
+              Machine Learning · Data Science · Python · Data Cleaning · Deep
+              Learning · Analytical Skills · Teamwork · Time Management ·
+              Critical Thinking
             </p>
           </div>
 
@@ -169,139 +178,123 @@
             class="bg-white shadow-md rounded-lg p-6 w-full border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]"
           >
             <h2 class="text-2xl font-semibold mb-2">
-              IBM Data Analyst Professional Certificate
+              IBM Data Analyst Professional
             </h2>
             <h3 class="text-xl text-gray-600 mb-2">IBM</h3>
-            <p class="text-gray-500 mb-4">May 2024 - Nov 2024</p>
+            <p class="text-gray-500 mb-4">May- Nov 2024</p>
             <p class="mb-4">
-              As part of my continuous learning journey, I am currently enrolled
-              in the IBM Data Analyst Professional Certificate program, which
-              has enhanced my analytical skillset through hands-on, real-world
-              data projects. The course covers a wide range of essential data
-              analysis topics. This program has strengthened my foundation in
-              data analytics, equipping me with both the technical tools and
-              analytical mindset to succeed in various industries like business,
-              finance, and sports analytics.
+              As part of my commitment to continuous learning, I am currently
+              pursuing the IBM Data Analyst Professional Certificate. This
+              program has deepened my expertise through hands-on, real-world
+              data projects, covering essential topics such as data
+              visualization, data management, and advanced analytical
+              techniques. It has equipped me with the technical skills and
+              critical thinking needed to drive data-driven insights across
+              industries like business, finance, and sports analytics.
             </p>
-            <h4 class="font-semibold mb-2">Skills:</h4>
+            <h4 class="font-semibold mb-2">Key Skills:</h4>
             <p class="text-gray-600">
-              Tableau · Pivot Tables · Data Management · Analytical Skills ·
-              Microsoft Excel · VLOOKUP · Extract, Transform, Load (ETL) · Data
-              Visualization · Critical Thinking · Data Analysis · SQL · Problem
-              Solving
+              Tableau · Pivot Tables · Data Management · Microsoft Excel ·
+              VLOOKUP Extract, Transform, Load (ETL) · Data Visualization · SQL
+              · Problem Solving Analytical Skills · Critical Thinking
             </p>
           </div>
           <div
             class="bg-white shadow-md rounded-lg p-6 w-full border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]"
           >
-            <h2 class="text-2xl font-semibold mb-2">
-              Google Data Analytics Professional Certificate
-            </h2>
+            <h2 class="text-2xl font-semibold mb-2">Google Data Analytics</h2>
             <h3 class="text-xl text-gray-600 mb-2">Coursera</h3>
             <p class="text-gray-500 mb-4">May 2024</p>
             <p class="mb-4">
-              Through the Google Data Analytics Professional Certificate
-              program, I gained a comprehensive understanding of the data
-              analysis process, from data collection to final reporting. The
-              program provided hands-on learning with real-world datasets and
-              tools, significantly enhancing my analytical skills. This
-              certificate deepened my ability to apply critical thinking,
-              problem-solving, and data visualization techniques to real-world
-              scenarios, which I now use in my professional data projects.
+              I completed the Google Data Analytics Professional Certificate,
+              gaining a thorough understanding of the data analysis lifecycle,
+              from data collection to reporting. The program offered hands-on
+              experience with real-world datasets and industry-standard tools,
+              significantly strengthening my analytical capabilities. Through
+              this training, I refined my skills in critical thinking,
+              problem-solving, and data visualization, which I actively apply in
+              my professional projects to drive data-driven decision-making.
             </p>
             <h4 class="font-semibold mb-2">Skills:</h4>
             <p class="text-gray-600">
-              Tableau · Data Management · Analytical Skills · Databases · Data
-              Cleaning · Data Warehousing · Creative Problem Solving · SQL ·
-              VLOOKUP · Extract, Transform, Load (ETL) · Problem Solving · Data
-              Visualization · Data Mining · Data Analysis
+              Tableau · Data Management · Analytical Skills · SQL · Data
+              Cleaning · Data Warehousing · ETL (Extract, Transform, Load) ·
+              VLOOKUP · Data Visualization · Data Mining · Data Analysis ·
+              Creative Problem Solving
             </p>
           </div>
 
           <div
             class="bg-white shadow-md rounded-lg p-6 w-full border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]"
           >
-            <h2 class="text-2xl font-semibold mb-2">
-              Certificate, Basic Data Analysis
-            </h2>
+            <h2 class="text-2xl font-semibold mb-2">Basic Data Analysis</h2>
             <h3 class="text-xl text-gray-600 mb-2">Futuretek Academy</h3>
-            <p class="text-gray-500 mb-4">Mar 2024 - May 2024</p>
+            <p class="text-gray-500 mb-4">March - May 2024</p>
             <p class="mb-4">
-              A 2-month intensive Data Analytics course, marking my first formal
-              education experience in Canada. This course was a pivotal step in
-              my career, providing me with a solid foundation in data analysis,
-              visualization, and database management. Throughout the course, I
-              gained hands-on experience with key tools and techniques,
-              including Excel, SQL, and Tableau. I learned how to clean,
-              analyze, and visualize data to extract meaningful insights and
-              support data-driven decision-making. This experience not only
-              enhanced my technical skills but also introduced me to the
-              Canadian educational environment, where I adapted quickly and
-              excelled in my studies. I was praised as the best student in the
-              class, counting it as an achievement being my first Canadian
-              class.
+              I completed a rigorous 2-month Data Analytics course, marking my
+              first formal education experience in Canada. This foundational
+              program equipped me with essential skills in data analysis,
+              visualization, and database management. I developed practical
+              expertise using tools like Excel, SQL, and Tableau to clean,
+              analyze, and visualize data for actionable insights. The course
+              refined my ability to support data-driven decision-making and
+              enhanced my technical skill set. Adapting swiftly to the Canadian
+              educational environment, I excelled academically and was
+              recognized as the top-performing student in the class.
             </p>
             <h4 class="font-semibold mb-2">Skills:</h4>
             <p class="text-gray-600">
               Tableau · Data Management · Databases · SQL · Communication ·
               Microsoft Outlook · VLOOKUP · Attention to Detail · Problem
-              Solving · Python (Programming Language) · Online Data Entry
+              Solving · Python . Data Entry
             </p>
           </div>
 
           <div
             class="bg-white shadow-md rounded-lg p-6 w-full border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]"
           >
-            <h2 class="text-2xl font-semibold mb-2">
-              Certificate, Data Visualisation
-            </h2>
+            <h2 class="text-2xl font-semibold mb-2">Data Visualization</h2>
             <h3 class="text-xl text-gray-600 mb-2">Moringa School</h3>
-            <p class="text-gray-500 mb-4">Sep 2023</p>
+            <p class="text-gray-500 mb-4">Sep- Dec 2023</p>
             <p class="mb-4">
-              Gained beginner experience in data visualization using programming
-              languages like Matplotlib, Seaborn, Plotly, ggplot2. I also got
-              hands-on class project experience on pivot tables, PowerPoint and
-              Tableau.
+              Acquired foundational skills in data visualization through
+              hands-on experience with tools such as Matplotlib, Seaborn,
+              Plotly, and ggplot2. Gained practical knowledge through class
+              projects involving pivot tables, PowerPoint, and Tableau,
+              enhancing my ability to communicate data insights effectively.
             </p>
             <h4 class="font-semibold mb-2">Skills:</h4>
             <p class="text-gray-600">
-              Tableau · Microsoft Office · Communication · Presentations ·
-              Attention to Detail · Time Management · Python (Programming
-              Language)
+              Microsoft Office Suite, Data Visualization and Presentations,
+              Communication, Attention to Detail, , Time Management, Python
             </p>
           </div>
 
           <div
             class="bg-white shadow-md rounded-lg p-6 w-full border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]"
           >
-            <h2 class="text-2xl font-semibold mb-2">
-              Certification in Data Analytics
-            </h2>
+            <h2 class="text-2xl font-semibold mb-2">Data Analytics</h2>
             <h3 class="text-xl text-gray-600 mb-2">
               The Nyeri National Polytechnic
             </h3>
-            <p class="text-gray-500 mb-4">Jun 2021 - Dec 2021</p>
+            <p class="text-gray-500 mb-4">June 2021 - December 2021</p>
             <p class="mb-4">
-              During my time at The Nyeri National Polytechnic, I embarked on an
-              enriching journey through the Data Analytics course. This
-              experience not only broadened my understanding of data-driven
-              decision-making but also equipped me with essential skills
-              applicable across various industries. The curriculum covered a
-              wide range of topics, including data manipulation, statistical
-              analysis, and data visualization. Through a blend of theoretical
-              knowledge and practical application, I gained insights into how to
-              analyze data effectively to derive actionable insights.
+              I successfully completed a comprehensive Data Analytics course at
+              The Nyeri National Polytechnic, where I gained valuable skills in
+              data manipulation, statistical analysis, and data visualization.
+              The curriculum focused on data-driven decision-making, preparing
+              me to analyze and interpret data for actionable insights across
+              various sectors. This program offered a strong balance between
+              theoretical knowledge and practical application through class
+              projects and participation in school events..
             </p>
             <p class="italic mb-4">
               Activities and societies: Class Projects and School Events
             </p>
             <h4 class="font-semibold mb-2">Skills:</h4>
             <p class="text-gray-600">
-              Tableau · Pivot Tables · Data Management · Analytical Skills ·
-              Databases · Microsoft Office · Communication · Microsoft Outlook ·
-              Teamwork · Typing · VLOOKUP · Extract, Transform, Load (ETL) ·
-              Team Leadership · Attention to Detail · Time Management · Python
-              (Programming Language)
+              Data Manipulation, Data-Driven Decision Making, Project
+              Management, Communication, Analytical Tool
             </p>
           </div>
         </div>
@@ -317,11 +310,11 @@
         />
         <div class="w-max flex items-center gap-2 mx-auto">
           <a
-            href="mailto:kevinomwangi11@gmail.com"
+            href="mailto:murichucollins26@gmail.com"
             class="email-link flex items-center gap-2"
           >
             <img src="./images/mail_icon.png" alt="Email Icon" class="w-6" />
-            kevinomwangi11@gmail.com
+            murichucollins26@gmail.com
           </a>
         </div>
 

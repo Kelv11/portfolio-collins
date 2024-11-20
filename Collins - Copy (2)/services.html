@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio-Kelvin</title>
+    <title>Portfolio-collins</title>
+    <link rel="icon" type="image/jpeg" href="images/khub.jpg" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       src = "./tailwind.config.js";
@@ -24,17 +25,16 @@
       >
         <li><a href="index.html">Home</a></li>
         <li><a href="education.html">Education</a></li>
-        <li><a href="about.html">Experience</a></li>
+        <li><a href="experience.html">Experience</a></li>
         <li><a href="projects.html">My work</a></li>
         <li><a href="services.html">Services</a></li>
       </ul>
       <div class="flex items-center gap-4">
         <a
           href="#contact"
-          class="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 font-semibold"
+          class="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 font-semibold hover:bg-[#fcf4ff] duration-500"
           >Contact <img src="arrow-40166_640.png" alt="" class="w-3"
         /></a>
-
         <button class="block md:hidden ml-3" onclick="openMenu()">
           <img src="./images/menu-black.png" alt="" class="w-6" />
         </button>
@@ -42,7 +42,7 @@
       <!--------mobile menu------->
       <ul
         id="sideMenu"
-        class="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-500 font-semibold"
+        class="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-slate-800 bg-opacity-90 backdrop-blur-sm transition duration-500 font-semibold text-white"
       >
         <div class="absolute right-6 top-6" onclick="closeMenu()">
           <img
@@ -53,26 +53,25 @@
         </div>
         <li><a href="index.html">Home</a></li>
         <li><a href="education.html" onclick="closeMenu()">Education</a></li>
-        <li><a href="about.html" onclick="closeMenu()">Experience</a></li>
+        <li><a href="experience.html" onclick="closeMenu()">Experience</a></li>
         <li><a href="projects.html" onclick="closeMenu()">My work</a></li>
         <li><a href="services.html" onclick="closeMenu()">Services</a></li>
       </ul>
     </nav>
     <!----------services---------->
-    <div id="services" class="w-full px-[12%] py-10 scroll-mt-20">
-      <h4 class="text-center mb-2 text-lg">What I offer</h4>
-      <h2 class="text-center text-5xl">My Services</h2>
+    <div id="services" class="w-full px-[12%] py-10 scroll-mt-20 pt-20">
+      <h2 class="text-center text-4xl font-bold">What I offer</h2>
       <p class="text-center max-w-2xl mx-auto mt-5 mb-12">
-        I am a dedicated data analyst with a strong focus on extracting
-        insights, building predictive models, and creating compelling
-        visualizations using modern data science tools, while continuously
-        expanding my skills to keep pace with evolving analytical techniques.
+        As a dedicated Data Analyst and Data Science & Machine Learning student,
+        I bring a versatile skill set to provide effective and data-driven
+        solutions. Here’s a look at the services I offer:
       </p>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6 my-10">
         <div
           class="service-card border border-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500"
         >
+          <!-- Business Analytics Icon -->
           <svg
             class="w-10 h-10 text-blue-500"
             fill="none"
@@ -84,55 +83,20 @@
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth="2"
-              d="M8 13v-1m4 1v-3m4 3V8M12 21l9-9-9-9-9 9 9 9z"
+              d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
             ></path>
           </svg>
-          <h3 class="text-lg my-4 text-black-900">Data Visualization</h3>
+          <h3 class="text-lg my-4 text-black-900">Business Analytics</h3>
           <p class="text-sm text-black-900 leading-5">
-            Transforming complex datasets into clear, actionable visual insights
+            Insights-driven analysis to help businesses identify opportunities,
+            optimize processes, and improve performance.
           </p>
-          <button
-            class="read-more flex items-center gap-2 text-gray-800 text-sm mt-5"
-          >
-            Read more
-            <svg
-              class="w-4 h-4"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M9 5l7 7-7 7"
-              ></path>
-            </svg>
-          </button>
-          <div class="expanded-content hidden mt-4">
-            <p class="mb-4">
-              My data visualization services transform complex datasets into
-              clear, actionable visual insights. Using tools like Tableau, Power
-              BI, and Python libraries such as Matplotlib and Seaborn, I create:
-            </p>
-            <ul class="list-disc pl-5 mb-4">
-              <li>Interactive dashboards for real-time data monitoring</li>
-              <li>Infographics for compelling data storytelling</li>
-              <li>Custom charts and graphs for reports and presentations</li>
-              <li>Geospatial visualizations for location-based insights</li>
-            </ul>
-            <p>
-              These visualizations help stakeholders quickly grasp complex
-              information, identify trends, and make data-driven decisions with
-              confidence.
-            </p>
-          </div>
         </div>
 
         <div
           class="service-card border border-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500"
         >
+          <!-- Data Entry & Management Icon -->
           <svg
             class="w-10 h-10 text-green-500"
             fill="none"
@@ -144,63 +108,20 @@
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth="2"
-              d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"
+              d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"
             ></path>
           </svg>
-          <h3 class="text-lg my-4 text-black-900">Predictive Modeling</h3>
+          <h3 class="text-lg my-4 text-black-900">Data Entry & Management</h3>
           <p class="text-sm text-black-900 leading-5">
-            Developing statistical models to forecast trends and outcomes
+            Efficient and accurate data entry services, with a focus on
+            organizing and managing data to ensure it's ready for analysis
           </p>
-          <button
-            class="read-more flex items-center gap-2 text-gray-600 text-sm mt-5"
-          >
-            Read more
-            <svg
-              class="w-4 h-4"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M9 5l7 7-7 7"
-              ></path>
-            </svg>
-          </button>
-          <div class="expanded-content hidden mt-4">
-            <p class="mb-4">
-              My predictive modeling services use advanced statistical
-              techniques and machine learning algorithms to forecast future
-              trends and outcomes. Using Python and tools like scikit-learn and
-              TensorFlow, I offer:
-            </p>
-            <ul class="list-disc pl-5 mb-4">
-              <li>Time series forecasting for sales and demand prediction</li>
-              <li>
-                Customer churn prediction and retention strategy development
-              </li>
-              <li>
-                Risk assessment models for financial and insurance sectors
-              </li>
-              <li>
-                Predictive maintenance models for manufacturing and IoT
-                applications
-              </li>
-            </ul>
-            <p>
-              These models enable organizations to anticipate future scenarios,
-              optimize operations, and make proactive decisions based on
-              data-driven predictions.
-            </p>
-          </div>
         </div>
 
         <div
           class="service-card border border-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500"
         >
+          <!-- Customer Service Icon -->
           <svg
             class="w-10 h-10 text-purple-500"
             fill="none"
@@ -212,62 +133,93 @@
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth="2"
-              d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+              d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"
             ></path>
+          </svg>
+          <h3 class="text-lg my-4 text-black-900">
+            Customer Service & Support
+          </h3>
+          <p class="text-sm text-black-900 leading-5">
+            Professional customer service and support, ensuring client
+            satisfaction and a smooth service experience.
+          </p>
+        </div>
+
+        <div
+          class="service-card border border-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500"
+        >
+          <!-- Data Reporting Icon -->
+          <svg
+            class="w-10 h-10 text-blue-500"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
             <path
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth="2"
-              d="M5 15.75l7.5-7.5 7.5 7.5"
+              d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
             ></path>
           </svg>
-          <h3 class="text-lg my-4 text-black-900">Data Mining</h3>
+          <h3 class="text-lg my-4 text-black-900">Data Reporting</h3>
           <p class="text-sm text-black-900 leading-5">
-            Uncovering patterns and extracting valuable insights from large
-            datasets
+            Comprehensive reporting to present data in a clear and actionable
+            format, making it easier to interpret and apply insights.
           </p>
-          <button
-            class="read-more flex items-center gap-2 text-gray-600 text-sm mt-5"
+        </div>
+
+        <div
+          class="service-card border border-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500"
+        >
+          <!-- Editing & Writing Icon -->
+          <svg
+            class="w-10 h-10 text-blue-500"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            Read more
-            <svg
-              class="w-4 h-4"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M9 5l7 7-7 7"
-              ></path>
-            </svg>
-          </button>
-          <div class="expanded-content hidden mt-4">
-            <p class="mb-4">
-              My data mining services uncover hidden patterns and extract
-              valuable insights from large, complex datasets. Utilizing advanced
-              techniques and tools like Python, R, and SQL, I provide:
-            </p>
-            <ul class="list-disc pl-5 mb-4">
-              <li>Cluster analysis for customer segmentation</li>
-              <li>Association rule mining for market basket analysis</li>
-              <li>
-                Anomaly detection for fraud prevention and quality control
-              </li>
-              <li>
-                Text mining and sentiment analysis for social media and customer
-                feedback
-              </li>
-            </ul>
-            <p>
-              These data mining services help organizations discover hidden
-              opportunities, improve decision-making processes, and gain a
-              competitive edge in their respective markets.
-            </p>
-          </div>
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"
+            ></path>
+          </svg>
+          <h3 class="text-lg my-4 text-black-900">Editing & Writing</h3>
+          <p class="text-sm text-black-900 leading-5">
+            Detail-oriented editing and writing support to create clear,
+            professional, and engaging content for a variety of data-related
+            needs.
+          </p>
+        </div>
+
+        <div
+          class="service-card border border-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500"
+        >
+          <!-- Market Research Icon -->
+          <svg
+            class="w-10 h-10 text-blue-500"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+            ></path>
+          </svg>
+          <h3 class="text-lg my-4 text-black-900">Market Research</h3>
+          <p class="text-sm text-black-900 leading-5">
+            In-depth market research and analysis to help businesses make
+            informed decisions based on industry trends, consumer behavior, and
+            competitive landscape
+          </p>
         </div>
       </div>
     </div>
@@ -278,19 +230,30 @@
         I'd love to hear from you. If you have any questions,comments or
         feedback, please use the form below
       </p>
-      <form action="" class="max-w-2xl mx-auto">
+      <form
+        method="post"
+        action="https://api.web3forms.com/submit"
+        class="max-w-2xl mx-auto"
+      >
+        <input
+          type="hidden"
+          name="access_key"
+          value="ffd667d8-b5fe-460c-b898-30f46508c393"
+        />
         <div class="grid grid-cols-auto gap-6 mt-10 mb-8">
           <input
             type="text"
             placeholder="Enter your name"
             class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white"
             required
+            name="Name"
           />
           <input
             type="email"
             placeholder="Enter your email"
             class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white"
             required
+            name="Email"
           />
         </div>
         <textarea
@@ -298,6 +261,7 @@
           placeholder="Enter your message"
           class="w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6"
           required
+          name="Message"
         ></textarea>
         <button
           class="py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500"
@@ -318,11 +282,11 @@
         />
         <div class="w-max flex items-center gap-2 mx-auto">
           <a
-            href="mailto:kevinomwangi11@gmail.com"
+            href="mailto:murichucollins26@gmail.com"
             class="email-link flex items-center gap-2"
           >
             <img src="./images/mail_icon.png" alt="Email Icon" class="w-6" />
-            kevinomwangi11@gmail.com
+            murichucollins26@gmail.com
           </a>
         </div>
 

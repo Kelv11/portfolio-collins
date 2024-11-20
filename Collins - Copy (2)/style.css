@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(45deg, #ff9a9e, #fad0c4); /* Pink shades */
+  /*background: linear-gradient(45deg, #ff9a9e, #fad0c4); /* Pink shades */
   background: linear-gradient(
     135deg,
     #667eea,
@@ -44,7 +44,7 @@ body {
 
 .email-link img {
   display: inline-block;
-  margin-right: 8px; /* Optional: adjust the spacing */
+  margin-right: 8px;
 }
 .service-card {
   transition: all 0.3s ease;
@@ -58,7 +58,7 @@ body {
   transition: max-height 0.3s ease;
 }
 .expanded-content.show {
-  max-height: 1000px; /* Adjust this value based on your content */
+  max-height: 1000px;
 }
 .hidden {
   display: none;

@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio-Kelvin</title>
+    <title>Portfolio-collins</title>
+    <link rel="icon" type="image/jpeg" href="images/khub.jpg" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       src = "./tailwind.config.js";
@@ -24,14 +25,14 @@
       >
         <li><a href="index.html">Home</a></li>
         <li><a href="education.html">Education</a></li>
-        <li><a href="about.html">Experience</a></li>
+        <li><a href="experience.html">Experience</a></li>
         <li><a href="projects.html">My work</a></li>
         <li><a href="services.html">Services</a></li>
       </ul>
       <div class="flex items-center gap-4">
         <a
           href="services.html"
-          class="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 font-semibold"
+          class="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 font-semibold hover:bg-[#fcf4ff] duration-500"
           >Contact <img src="arrow-40166_640.png" alt="" class="w-3"
         /></a>
 
@@ -42,7 +43,7 @@
       <!--------mobile menu------->
       <ul
         id="sideMenu"
-        class="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-500 font-semibold"
+        class="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-slate-800 bg-opacity-90 backdrop-blur-sm transition duration-500 font-semibold text-white"
       >
         <div class="absolute right-6 top-6" onclick="closeMenu()">
           <img
@@ -53,25 +54,24 @@
         </div>
         <li><a href="index.html">Home</a></li>
         <li><a href="education.html" onclick="closeMenu()">Education</a></li>
-        <li><a href="about.html" onclick="closeMenu()">Experience</a></li>
+        <li><a href="experience.html" onclick="closeMenu()">Experience</a></li>
         <li><a href="projects.html" onclick="closeMenu()">My work</a></li>
         <li><a href="services.html" onclick="closeMenu()">Services</a></li>
       </ul>
     </nav>
     <!------------------------my work------------>
-    <div>
-      <div id="work" class="w-full px-[12%] py-10 scroll-mt-20">
-        <h4 class="text-center mb-2 text-lg">My portfolio</h4>
-        <h2 class="text-center text-5xl">Projects</h2>
-        <p class="text-center max-w-2xl mx-auto mt-5 mb-12">
-          welcome to my data analytics portfolio!! Explore a collection of
-          projects showcasing my expertise in data science and data analytics
-        </p>
+    <div id="work" class="w-full px-[12%] py-10 scroll-mt-20 pt-20">
+      <h2 class="text-center text-4xl font-bold">Projects</h2>
+      <p class="text-center max-w-2xl mx-auto mt-5 mb-12">
+        Welcome to my data analytics portfolio! Explore a collection of projects
+        showcasing my expertise in data science and data analytics.
+      </p>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
-          <!-- Formula 1 Project Card -->
+      <div class="flex flex-col gap-8">
+        <!-- Formula 1 Project Card -->
+        <div class="flex flex-col md:flex-row gap-4 items-center">
           <div
-            class="aspect-square bg-[url('./images/f1.jpg')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group"
+            class="w-full md:w-1/3 aspect-video bg-[url('./images/f1.jpg')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group"
           >
             <a
               href="https://github.com/kulture56/Formula-1-PROJECT"
@@ -80,32 +80,34 @@
               class="block w-full h-full"
             >
               <div
-                class="bg-white w-11/12 sm:w-10/12 rounded-md absolute bottom-2 sm:bottom-5 left-1/2 -translate-x-1/2 py-2 sm:py-3 px-3 sm:px-5 flex items-center justify-between duration-500 group-hover:bottom-4 sm:group-hover:bottom-7"
+                class="bg-white w-11/12 rounded-md absolute bottom-2 left-1/2 -translate-x-1/2 py-2 px-3 flex items-center justify-between duration-500 group-hover:bottom-4"
               >
                 <div>
-                  <h2 class="font-semibold text-sm sm:text-base">
-                    Data Analytics
-                  </h2>
-                  <p class="text-xs sm:text-sm text-gray-700">
-                    Formula 1 analysis
-                  </p>
+                  <h2 class="font-semibold text-sm">Data Analytics</h2>
+                  <p class="text-xs text-gray-700">Formula 1 analysis</p>
                 </div>
                 <div
-                  class="border rounded-full border-black w-7 sm:w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition"
+                  class="border rounded-full border-black w-7 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition"
                 >
-                  <img
-                    src="./images/send-icon.png"
-                    alt="GitHub"
-                    class="w-4 sm:w-5"
-                  />
+                  <img src="./images/send-icon.png" alt="GitHub" class="w-4" />
                 </div>
               </div>
             </a>
           </div>
+          <div class="w-full md:w-2/3">
+            <h3 class="text-xl font-semibold mb-2">Formula 1 Analysis</h3>
+            <p class="text-sm text-black-700">
+              An in-depth analysis of Formula 1 racing data, exploring
+              performance trends, race strategies, and driver statistics to
+              uncover insights into the world's most prestigious motorsport.
+            </p>
+          </div>
+        </div>
 
-          <!-- Pump it Up Project Card -->
+        <!-- Pump it Up Project Card -->
+        <div class="flex flex-col md:flex-row gap-4 items-center">
           <div
-            class="aspect-square bg-[url('./images/pump.jpg')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group overflow-hidden"
+            class="w-full md:w-1/3 aspect-video bg-[url('./drill2.jpg')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group overflow-hidden"
           >
             <a
               href="https://github.com/kulture56/Pump-it-Up-Data-Mining-the-Water-Table"
@@ -117,32 +119,36 @@
                 class="absolute inset-0 bg-black bg-opacity-20 transition-opacity duration-300 group-hover:bg-opacity-30"
               ></div>
               <div
-                class="bg-white w-11/12 sm:w-10/12 rounded-md absolute bottom-2 sm:bottom-5 left-1/2 -translate-x-1/2 py-2 sm:py-3 px-3 sm:px-5 flex items-center justify-between duration-500 group-hover:bottom-4 sm:group-hover:bottom-7"
+                class="bg-white w-11/12 rounded-md absolute bottom-2 left-1/2 -translate-x-1/2 py-2 px-3 flex items-center justify-between duration-500 group-hover:bottom-4"
               >
                 <div>
-                  <h2 class="font-semibold text-sm sm:text-base">
-                    Data Analytics
-                  </h2>
-                  <p class="text-xs sm:text-sm text-gray-700">
-                    Pump it up (Ongoing)
-                  </p>
+                  <h2 class="font-semibold text-sm">Data Analytics</h2>
+                  <p class="text-xs text-gray-700">Pump it up</p>
                 </div>
                 <div
-                  class="border rounded-full border-black w-7 sm:w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition"
+                  class="border rounded-full border-black w-7 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition"
                 >
-                  <img
-                    src="./images/send-icon.png"
-                    alt="GitHub"
-                    class="w-4 sm:w-5"
-                  />
+                  <img src="./images/send-icon.png" alt="GitHub" class="w-4" />
                 </div>
               </div>
             </a>
           </div>
+          <div class="w-full md:w-2/3">
+            <h3 class="text-xl font-semibold mb-2">
+              Pump it Up: Data Mining the Water Table
+            </h3>
+            <p class="text-sm text-black-700">
+              A project focused on predicting the functionality of water pumps
+              in Tanzania using data mining techniques. This analysis aims to
+              improve water access in developing regions.
+            </p>
+          </div>
+        </div>
 
-          <!-- Main Campaign Projects Card -->
+        <!-- Main Campaign Projects Card -->
+        <div class="flex flex-col md:flex-row gap-4 items-center">
           <div
-            class="aspect-square bg-[url('./MARKET.jpg')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group overflow-hidden"
+            class="w-full md:w-1/3 aspect-video bg-[url('./MARKET.jpg')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group overflow-hidden"
           >
             <a
               href="https://github.com/kulture56/Main-Campaign-Projects-LightHouse-"
@@ -154,34 +160,125 @@
                 class="absolute inset-0 bg-black bg-opacity-20 transition-opacity duration-300 group-hover:bg-opacity-30"
               ></div>
               <div
-                class="bg-white w-11/12 sm:w-10/12 rounded-md absolute bottom-2 sm:bottom-5 left-1/2 -translate-x-1/2 py-2 sm:py-3 px-3 sm:px-5 flex items-center justify-between duration-500 group-hover:bottom-4 sm:group-hover:bottom-7"
+                class="bg-white w-11/12 rounded-md absolute bottom-2 left-1/2 -translate-x-1/2 py-2 px-3 flex items-center justify-between duration-500 group-hover:bottom-4"
               >
                 <div>
-                  <h2 class="font-semibold text-sm sm:text-base">
+                  <h2 class="font-semibold text-sm">
                     Business Analysis Using SQLite
                   </h2>
-                  <p class="text-xs sm:text-sm text-gray-700">Main Campaigns</p>
+                  <p class="text-xs text-gray-700">Marketing Campaigns</p>
                 </div>
                 <div
-                  class="border rounded-full border-black w-7 sm:w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition"
+                  class="border rounded-full border-black w-7 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition"
                 >
-                  <img
-                    src="./images/send-icon.png"
-                    alt="GitHub"
-                    class="w-4 sm:w-5"
-                  />
+                  <img src="./images/send-icon.png" alt="GitHub" class="w-4" />
                 </div>
               </div>
             </a>
           </div>
+          <div class="w-full md:w-2/3">
+            <h3 class="text-xl font-semibold mb-2">
+              Marketing-campaigns : Business Analysis
+            </h3>
+            <p class="text-sm text-black-700">
+              A comprehensive business analysis project utilizing SQLite to
+              analyze main campaign data. This project demonstrates data-driven
+              decision-making in marketing and business strategies.
+            </p>
+          </div>
         </div>
-        <a
-          href="#"
-          class="w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-20 hover:bg-[#fcf4ff] duration-500"
-        >
-          Show more <img src="./images/right-arrow-bold.png" alt="" class="w-4"
-        /></a>
+
+        <!--mortality Projects Card -->
+        <div class="flex flex-col md:flex-row gap-4 items-center">
+          <div
+            class="w-full md:w-1/3 aspect-video bg-[url('./shelter.jpg')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group overflow-hidden"
+          >
+            <a
+              href="https://github.com/kulture56/Exploratory-Data-Analysis-of-Mortality-rates-of-Shelter-Residents-in-Toronto-From-2007-2024"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="block w-full h-full"
+            >
+              <div
+                class="absolute inset-0 bg-black bg-opacity-20 transition-opacity duration-300 group-hover:bg-opacity-30"
+              ></div>
+              <div
+                class="bg-white w-11/12 rounded-md absolute bottom-2 left-1/2 -translate-x-1/2 py-2 px-3 flex items-center justify-between duration-500 group-hover:bottom-4"
+              >
+                <div>
+                  <h2 class="font-semibold text-sm">
+                    Analysis of Mortality of Shelter Residents in Toronto
+                  </h2>
+                </div>
+                <div
+                  class="border rounded-full border-black w-7 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition"
+                >
+                  <img src="./images/send-icon.png" alt="GitHub" class="w-4" />
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="w-full md:w-2/3">
+            <h3 class="text-xl font-semibold mb-2">
+              Analysis of Mortality of Shelter Residents in Toronto
+              From-2007-2024
+            </h3>
+            <p class="text-sm text-black-700">
+              This dataset, spanning from 2007 to 2024, tracks monthly mortality
+              rates across three gender categories: Male, Female, and
+              Transgender/Non-binary/Two-Spirit. The data contains a total of
+              212 monthly entries, with information on the total number of
+              decedents each month and their respective genders.
+            </p>
+          </div>
+        </div>
+        <!-- Banking Projects Card -->
+        <div class="flex flex-col md:flex-row gap-4 items-center">
+          <div
+            class="w-full md:w-1/3 aspect-video bg-[url('./bank.jpg')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group overflow-hidden"
+          >
+            <a
+              href="https://github.com/kulture56/Bank-Marketing"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="block w-full h-full"
+            >
+              <div
+                class="absolute inset-0 bg-black bg-opacity-20 transition-opacity duration-300 group-hover:bg-opacity-30"
+              ></div>
+              <div
+                class="bg-white w-11/12 rounded-md absolute bottom-2 left-1/2 -translate-x-1/2 py-2 px-3 flex items-center justify-between duration-500 group-hover:bottom-4"
+              >
+                <div>
+                  <h2 class="font-semibold text-sm">Bank Marketing</h2>
+                </div>
+                <div
+                  class="border rounded-full border-black w-7 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition"
+                >
+                  <img src="./images/send-icon.png" alt="GitHub" class="w-4" />
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="w-full md:w-2/3">
+            <h3 class="text-xl font-semibold mb-2">Bank Marketing</h3>
+            <p class="text-sm text-black-700">
+              The goal is to predict if the client will subscribe a term deposit
+              (variable y) from a banking dataset using python and its libraries
+              on Jupyter Notebook and also my analytical to approach the issue
+              at hand.
+            </p>
+          </div>
+        </div>
       </div>
+
+      <a
+        href="https://github.com/kulture56"
+        class="w-max flex items-center justify-center gap-2 text-black-700 border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-20 hover:bg-[#fcf4ff] duration-500"
+        target="_blank"
+      >
+        GITHUB <img src="./arrow.png" alt="" class="w-4" />
+      </a>
     </div>
     <!---------------------------footer---------->
     <div class="mt-5">
@@ -193,11 +290,11 @@
         />
         <div class="w-max flex items-center gap-2 mx-auto">
           <a
-            href="mailto:kevinomwangi11@gmail.com"
+            href="mailto:murichucollins26@gmail.com"
             class="email-link flex items-center gap-2"
           >
             <img src="./images/mail_icon.png" alt="Email Icon" class="w-6" />
-            kevinomwangi11@gmail.com
+            murichucollins26@gmail.com
           </a>
         </div>
 
